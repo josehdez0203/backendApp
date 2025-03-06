@@ -5,9 +5,9 @@ tmp_dir = "tmp"
 [build]
   args_bin = []
   bin = "./bin/api"
-  cmd = "go build -o ./bin/api  ./cmd/api"
+  cmd = "go build -o ./bin/api  ./api"
   delay = 1000
-  exclude_dir = ["postgres-data", "tmp","sql", "bin" ]
+  exclude_dir = ["postgres-data", "tmp", "bin" ]
   exclude_file = []
   exclude_regex = ["_test.go"]
   exclude_unchanged = false
@@ -28,7 +28,7 @@ tmp_dir = "tmp"
   stop_on_error = false
 
 [color]
-  app = ""
+  app = "blue"
   build = "yellow"
   main = "magenta"
   runner = "green"
@@ -50,3 +50,4 @@ tmp_dir = "tmp"
 [screen]
   clear_on_rebuild = false
   keep_scroll = true
+

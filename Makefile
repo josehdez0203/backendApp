@@ -28,16 +28,16 @@ dropdb:
 	docker exec -it ${APP} dropdb --username=${USER} ${DB}
 
 migrate-up:
-	migrate -path internal/db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose up
+	migrate -path db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose up
 
 migrate-down:
-	migrate -path internal/db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose down
+	migrate -path db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose down
 
 migrate-up1:
-	migrate -path internal/db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose up 1
+	migrate -path db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose up 1
 
 migrate-down1:
-	migrate -path internal/db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose down 1
+	migrate -path db/migrations -database "postgres://${USER}:${PASSWORD}@${SERVER}:${PUERTO}/${DB}?sslmode=disable" -verbose down 1
 
 sqlc:
 	sqlc generate
