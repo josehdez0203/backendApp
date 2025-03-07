@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/josehdez0203/backendApp/logger"
-	"github.com/josehdez0203/backendApp/repository"
-	"github.com/josehdez0203/backendApp/repository/dbrepo"
+	"github.com/josehdez0203/realstate/logger"
+	"github.com/josehdez0203/realstate/repository"
+	"github.com/josehdez0203/realstate/repository/dbrepo"
 )
 
 const port = 8080
@@ -29,7 +29,7 @@ func main() {
 	// aplication config
 	var app application
 	// read from command line
-	flag.StringVar(&app.DNS, "dns", "host=localhost port=5432 user=postgres password=postgres dbname=fullstackApp sslmode=disable timezone=UTC connect_timeout=5", "Postgres connection")
+	flag.StringVar(&app.DNS, "dns", "host=localhost port=5432 user=postgres password=postgres dbname=realstate sslmode=disable timezone=UTC connect_timeout=5", "Postgres connection")
 	flag.StringVar(&app.JWTSecret, "jwt-secret", "verysecret", "signing secret")
 	flag.StringVar(&app.JWTIssuer, "jwt-issuer", "example.com", "signing issuer")
 	flag.StringVar(&app.JWTAudience, "wt-audience", "example.com", "signing audience")

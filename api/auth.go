@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/josehdez0203/backendApp/logger"
+	"github.com/josehdez0203/realstate/logger"
 )
 
 type Auth struct {

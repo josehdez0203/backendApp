@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/josehdez0203/backendApp/logger"
+	"github.com/josehdez0203/realstate/logger"
 
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/josehdez0203/backendApp/models"
+	"github.com/josehdez0203/realstate/models"
 	"golang.org/x/crypto/bcrypt"
 )
 

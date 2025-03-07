@@ -3,7 +3,7 @@ package dbrepo
 import (
 	"context"
 
-	"github.com/josehdez0203/backendApp/models"
+	"github.com/josehdez0203/realstate/models"
 )
 
 func (m *PostgresDBRepo) GetUserByEmail(email string) (*models.User, error) {

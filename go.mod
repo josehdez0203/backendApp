@@ -1,4 +1,4 @@
-module github.com/josehdez0203/backendApp
+module github.com/josehdez0203/realstate
 
 go 1.22.4
 

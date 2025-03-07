@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/josehdez0203/backendApp/logger"
+	"github.com/josehdez0203/realstate/logger"
 )
 
 func (app *application) Hello(w http.ResponseWriter, r *http.Request) {
