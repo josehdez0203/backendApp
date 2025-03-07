@@ -3,7 +3,7 @@ package repository
 import (
 	"database/sql"
 
-	"github.com/josehdez0203/backendApp/models"
+	"github.com/josehdez0203/realstate/models"
 )
 
 type DatabaseRepo interface {

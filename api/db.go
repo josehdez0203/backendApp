@@ -6,7 +6,7 @@ import (
 	_ "github.com/jackc/pgconn"
 	_ "github.com/jackc/pgx/v4"
 	_ "github.com/jackc/pgx/v4/stdlib"
-	"github.com/josehdez0203/backendApp/logger"
+	"github.com/josehdez0203/realstate/logger"
 )
 
 func openDB(dns string) (*sql.DB, error) {

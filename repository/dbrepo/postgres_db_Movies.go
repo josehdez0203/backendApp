@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/josehdez0203/backendApp/models"
+	"github.com/josehdez0203/realstate/models"
 )
 
 func (m *PostgresDBRepo) AllMovies(genre ...int) ([]*models.Movie, error) {
